@@ -1,0 +1,27 @@
+npm install vite@latest
+npm install
+npm install react-router-dom
+npm install react-google-charts
+exteinsion es7
+
+font => outfit font
+
+
+ if(coinData){
+  return (
+    <div className='coin'>
+      <div className="coin-name">
+        <img src={coinData.image.large} alt="" />
+        <p><br />{coinData.name} ({coinData.symbol.toUpperCase()}) </p>
+      </div>
+    </div>
+  )
+ }else{
+  return(
+    <div className="spinner">
+      <div className="spin">
+
+      </div>
+    </div>
+  )
+ }
